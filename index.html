@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一頁式網站設計(未完)</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/js_bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <!--nav-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+            <div class="container-fluid">
+                <!-- 品牌logo  之後補自製icon-->
+                <a class="navbar-brand" href="#"><img width="50px" height="50px" src="./Icons/facebook.svg"></a>
+
+                <!-- 第一部份：手機版 -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#linkbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- 第二部份：桌上型電腦版 -->
+
+                <div class="collapse navbar-collapse" id="linkbar">
+                    <!-- 列出內容 -->
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">關於我們</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#slideshow">新聞賽事</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#heros">英雄榜</a>
+                        </li>
+                    </ul>
+                    <!-- 列出到右邊 -->
+                    <form style="width:300px;" class="input-group">
+                        <input class="form-control me-3" type="search" placeholder="搜尋">
+                        <button class="btn btn-success" type="submit">搜尋</button>
+                    </form><!--日後補php資料庫可以搜尋本網站的有關資料-->
+                </div>
+            </div>
+        </nav>
+        <!--info-->
+        <div class="container-intro text-center" id="home">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p style="color:yellow; font-size:24pxs">2023杭州亞運中華隊特別介紹</p>
+                </div>
+                <div class="col-sm-4">
+                    <p>本屆亞運中華台北代表團一共獲得19金、20銀、28銅，總計67面獎牌，獎牌榜排名第六，若依照獎牌榜的排序規則，本屆代表團的獎牌分布為隊史最佳成績</p>
+                </div>
+                <div class="col-sm-4">
+                    <img class="pic" src="./images/logo.png">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+
+        <!--之後再加一個 左側col-2~3 置中70vh nav-bar asidebar link-> 1.賽事日程表全圖 2.得獎排名 3.精彩影片-盡量全部得獎都有  -->
+
+        <!--cards 日後回調整大小 及位置-->
+        <div class="container-card text-center pt-5" id="about">
+            <h2>關於我們</h2>
+            <div class="row">
+                <!-- 第一個卡片 -->
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="banner-image"></div>
+                        <img src="images/boy1.png" alt="profile pic" class="profile-img">
+                        <div class="card-body">
+                            <h5 class="card-title">林昆松</h5>
+                            <p class="card-text">前端使用者介面　設計師</p>
+                            <a href="#" class="btn btn-primary">詳細資料</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 第二個卡片 -->
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="banner-image"></div>
+                        <img src="images/girl.jpg" alt="profile pic" class="profile-img">
+                        <div class="card-body">
+                            <h5 class="card-title">XXX</h5>
+                            <p class="card-text">資料庫管理　設計師</p>
+                            <a href="#" class="btn btn-primary">詳細資料</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 第三個卡片 -->
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="banner-image"></div>
+                        <img src="images/boy2.png" alt="profile pic" class="profile-img">
+                        <div class="card-body">
+                            <h5 class="card-title">OOO</h5>
+                            <p class="card-text">Back-End System Developer</p>
+                            <a href="#" class="btn btn-primary">詳細資料</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--slideshow-->
+        <div id="slideshow" class="carousel slide text-center pt-5" data-bs-ride="carousel">
+            <h2>新聞賽事</h2><!--日後補足共6張-->
+            <!-- 圖片投影 元件１-->
+            <div class="carousel-inner">
+                <!-- 第一張圖片 active　-->
+                <div class="carousel-item active">
+                    <img class="slide-pic" src="./images/no_1.png" alt="slide1">
+                    <div class="carousel-caption">
+                        <h2>世界第一的那個男人!</h2>
+                    </div>
+                    <!--日後改加上超連結連到content--->
+                </div>
+
+                <!-- 第二張圖片 -->
+                <div class="carousel-item ">
+                    <img class="slide-pic" src="./images/wk_no1.jpg" alt="slide2">
+                    <div class="carousel-caption">
+                        <h2>布農族女戰士!</h2>
+                    </div>
+                    <!--日後改加上超連結連到content--->
+                </div>
+
+                <!-- 第三張圖片 -->
+                <div class="carousel-item ">
+                    <img class="slide-pic" src="./images/mky_no1.jpg" alt="slide3">
+                    <div class="carousel-caption">
+                        <h2>不到最後不輕言放棄!</h2>
+                    </div>
+                    <!--日後改加上超連結連到content--->
+                </div>
+            </div>
+
+            <!-- 左右按鈕　元件２ -->
+            <!-- 左邊按鈕 -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#slideshow" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <!-- 右邊按鈕 -->
+            <button class="carousel-control-next" type="button" data-bs-target="#slideshow" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+            <!-- 指示按鈕　元件３ -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active">
+
+                </button>
+
+                <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1">
+
+                </button>
+
+                <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2">
+
+                </button>
+            </div>
+        </div>
+
+        <!--8bs-->
+        <div class="container-tabs text-center pt-5" id="heros">
+            <h2>英雄榜</h2>
+
+            <!-- 第一部份：標籤分頁的導覽列 -->
+            <div class="nav nav-tabs nav-justified pt-3">
+                <!-- 按鈕1 -->
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#menu1" aria-selected="true">
+                    金牌介紹
+                </button>
+                <!-- 按鈕2 -->
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#menu2" aria-selected="false">
+                    銀牌介紹
+                </button>
+                <!-- 按鈕3 -->
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#menu3" aria-selected="false">
+                    銅牌介紹
+                </button>
+            </div>
+
+
+            <!-- 第二部份：標籤分頁的內容 -->
+            <div class="tab-content container">
+                <!-- 第1個內容 -->
+                <div class="tab-pane fade show active" id="menu1">
+                    <h3>金牌</h3>
+                    <img src="./images/g1.png" alt="">
+                    <div id="judo-man">
+                        <h3>柔道男子組</h3>
+                        <br>
+                        <h5><i>世界第一的那個男人</i></h5>
+                        <hr>
+
+                        <p>2023杭州亞運本週開打，賽程開始第二天中華隊就傳出捷報！柔道男神楊勇緯替中華隊
+                            摘下歷史上第100面金牌，而過不久9/28便是他的生日，賽後哽咽流淚表示：「是送給
+                            自己最好的26歲生日禮物」。
+
+                            在2020年東京奧運一舉奪銀的中華隊柔道國手楊勇緯，一夕爆紅成為不少台灣少女的夢
+                            中情人，不僅僅是在奧運打出好成績，楊勇緯更於2021年國際柔道聯盟公布的男子60公
+                            斤量級排名中登上世界第一。過去曾在上屆雅加達亞運奪下銅牌，今年的他準備好了！於
+                            杭州亞運開打第二天就拿下中華隊首面金牌。
+
+                            而這不只是楊勇緯首面亞運金牌，同時也是中華隊歷史上首面柔道金牌、亞運中華隊
+                            第100面金牌，意義更為深重！在8強賽與日本好手近藤隼斗一路對決到黃金得分制，
+                            因對手吞下3個指導，楊勇緯驚險闖進4強，報了去年東京大滿貫賽一箭之仇。再過幾
+                            天便是楊勇緯的26歲生日，無疑是最好的禮物！</p>
+                        <h5><i>「失敗中再站起來的動力」</i></h5>
+
+                        <p>全台粉絲緊盯螢幕轉播，隨著比賽時間結束，不少人與他一樣眼淚奪眶而出，賽後訪問
+                            全程哽咽，說到激動處更是忍不住情緒潰堤，除了坦言身負重任壓力很大之外，他也提到
+                            「拿下這金牌，給了我很多在失敗中再站起來的動力。」
+                        </p>
+                    </div>
+                    <div id="karate-female">
+                        <h3>空手道女子組</h3>
+                        <br>
+                        <h5><i>布農族女戰士</i></h5>
+                        <hr>
+
+                        <p>台灣空手道好手谷筱霜，過去曾是雅加達亞運空手道金牌，
+                            這次踏上杭州亞運，首戰面對阿拉伯聯合大公國女將阿傑米（Hawraa Al Ajmi），一
+                            開始鳩遇上苦戰，落後4分，不料最後靠著驚人的「一本」將比分追平，最後由裁判裁定
+                            奪勝，晉級8強。在8強賽事中，谷筱霜則對上
+                            泰國好手集本素（Chanyanut Chippensuk），一開賽谷筱霜雖先失分，但隨即以一
+                            記上段踢拿下3分，之後更是將比數拉大，雙方差了整整4分，即便集本素試圖力挽狂瀾
+                            ，但最後谷筱霜仍以11：3強勢輾壓，順利挺進4強。
+
+                            緊接著4強賽，谷筱霜遇上24歲的
+                            烏茲別克女將伊斯馬季拉耶娃（Shakhrizoda Ismatillaeva），一開賽兩人就各得1分
+                            ，不過谷筱霜絲毫不讓對手鬆懈，在對手摔倒後追加打擊獲得3分，接著的連續攻擊讓她
+                            一口氣連拿7分，領先一路擴大，在比賽接近尾聲時，烏茲別克選手更是一度被打到嘔吐
+                            ，雖然最後有回到賽場，但仍不敵谷筱霜，谷筱霜最後以8：2奪勝，挺進金牌戰。
+                        </p>
+                        <h5><i>冷靜沉著堅持到最後</i></h5>
+
+                        <p>來到最後的金牌戰，谷筱霜對上世界排名第4的
+                            哈薩克好手然格貝爾拜（Moldir Zhangbyrbay），雙方激戰至4：5，
+                            谷筱霜暫時落後，這時比賽時間僅剩5秒，谷筱霜瞬間攻擊得手、成功扳平，
+                            接著技術性撐到時間終了，由裁判判定獲勝，成功拿下女子空手道50公斤量級金牌，
+                            也替台灣隊奪下平歷史最佳的第19金。
+                        </p>
+                    </div>
+                    <div id="pulley-mteam">
+                        <h3>滑輪團體男子組</h3>
+                        <br>
+                        <h5><i>不到最後不輕言放棄!</i></h5>
+                        <hr>
+
+                        <p>杭州亞運賽事精彩又刺激，今（2）日上午進行了男子滑輪競速3000公尺接力決賽，南韓隊原本一路保持領先位置，
+                            不過台灣隊在倒數圈數開始急起直追，最後在終點前，台灣選手奮力伸出「神來一腳」，提早碰到終點線，以0.01
+                            秒的差距險勝南韓，勇奪金牌，讓台灣民眾全都興喜若狂。不過南韓隊可就慘了，選手原本以為奪金，準備要開心慶
+                            祝，後來才發現自己的大意失了金牌，其中1名選手還忍不住大淚崩。
+                        </p>
+                        <h5><i>神來的一腳</i></h5>
+
+                        <p>今日的男子滑輪競速3000公尺接力決賽戰況激烈，台灣隊由趙祖政、黃玉霖、陳彥成出賽，與南韓隊一路爭搶1、2名位置。
+                            而到了最後終點線前方的直線衝刺區，我國選手黃玉霖與南韓選手鄭喆元還有一小段差距，不過他絲毫不放棄，依舊全力衝
+                            刺，到了終點線前，南韓選手鄭喆元已經開始鬆懈，甚至高舉雙手慶祝，不過黃玉霖這時還沒放棄，他也伸出神來一腳，率
+                            先衝過終點線，最終台灣隊以4分5秒692的成績，險勝南韓的4分5秒702，拿下金牌。
+                        </p>
+                    </div>
+                </div>
+                <!-- 第2個內容 -->
+                <div class="tab-pane fade" id="menu2">
+                    <h3>銀牌</h3>
+                    <img src="./images/s2.png" alt="">
+                    <!--日後補資料-->
+
+                </div>
+                <!-- 第3個內容 -->
+                <div class="tab-pane fade" id="menu3">
+                    <h3>銅牌</h3>
+                    <img src="./images/p3.png" alt="">
+                    <!--日後補資料-->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-info text-center" id="info">
+            <div class="row">
+                <div class="col-sm-4">
+                    <nav>
+                        <ul>
+                            <li><a href="https://big5.hangzhou2022.cn/gate/big5/www.hangzhou2022.cn/">杭州亞運會第19屆官網</a>
+                            </li>
+                            <li><a href="https://www.tpenoc.net/">中華奧林匹克委員會</a></li>
+                            <li><a href="https://www.rocsf.org.tw/">中華體協</a></li>
+                            <li><a href="#">聯繫我們</a></li><!--日後補form 連後端php--->
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-sm-4">
+                    <p id="footertxt">跨平台網站設計班 08_林昆松</p>
+                </div>
+                <!-- <div class="col-sm-4">
+                日後補icon ul->li*4
+            </div> -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
